@@ -42,3 +42,9 @@ WooCommerce plugin for sending product-targeted customer emails with reusable te
 - Recipients are collected from unique billing emails on `processing`, `completed`, and `on-hold` WooCommerce orders.
 - The plugin does not manage marketing consent or unsubscribe flows by itself.
 - When multiple products are selected, `{{product_name}}` renders as a comma-separated list and `{{product_url}}` uses the first selected product URL.
+
+## Installable Zip
+
+- The repo includes a WordPress-uploadable archive at `dist/pat-product-emailer.zip`.
+- To rebuild it after code changes, run `tools/build-zip.sh`.
+- Upload the generated zip in WordPress under `Plugins -> Add New -> Upload Plugin`.
